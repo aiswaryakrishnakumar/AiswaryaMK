@@ -86,9 +86,9 @@ const MobileNav = () => {
               </p>
             </a>
 
-            <a href="#randoms">
+            <a href="#resume">
               <p onClick={closeMenu} className="hover:border-b-2 border-[blue]">
-                Randoms
+                Resume
               </p>
             </a>
 

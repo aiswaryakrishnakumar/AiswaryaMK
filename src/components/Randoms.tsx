@@ -6,13 +6,13 @@ import { gsap } from "gsap";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import { componentProps } from "../types";
 
-const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
+const Resume = ({ openMenu, setOpenMenu }: componentProps) => {
   const ref = useRef(null);
   const onScreen = useIntersectionObserver(ref, 0.1);
-  const RandomsRef = useRef(null);
+  const ResumeRef = useRef(null);
 
   useEffect(() => {
-    const scrollToRandoms = setTimeout(() => {
+    const scrollToResume = setTimeout(() => {
       if (onScreen) {
         document.querySelector("#nikeAir")?.scrollIntoView({
           behavior: "smooth",
@@ -20,7 +20,7 @@ const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
       }
     }, 1500);
 
-    return () => clearTimeout(scrollToRandoms);
+    return () => clearTimeout(scrollToResume);
   }, [onScreen]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
       const tl = gsap.timeline();
       const ctx = gsap.context(() => {
         tl.fromTo(
-          RandomsRef.current,
+          ResumeRef.current,
           { opacity: 0 },
           {
             y: 0,
@@ -46,16 +46,16 @@ const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
     <div
       className="section main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw] "
       data-scroll-section
-      id="randoms"
+      id="resume"
     >
       <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className="h-full w-full  flex flex-col justify-center " ref={ref}>
         <div className="hero flex flex-col gap-4 lg:ml-16">
           <h1
             className="text-6xl font-bold font-[avenir-black] underline lg:no-underline"
-            ref={RandomsRef}
+            ref={ResumeRef}
           >
-            Randoms
+            Resume
           </h1>
         </div>
       </div>
@@ -65,4 +65,4 @@ const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
   );
 };
 
-export default Randoms;
+export default Resume;

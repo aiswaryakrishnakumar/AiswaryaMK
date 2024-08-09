@@ -23,8 +23,8 @@ const NavLinks = ({ setOpenMenu, openMenu }: componentProps) => {
     setOpenMenu(false);
   };
 
-  const scrollToRandoms = () => {
-    document.querySelector("#randoms")?.scrollIntoView({
+  const scrollToResume = () => {
+    document.querySelector("#resume")?.scrollIntoView({
       behavior: "smooth",
     });
     setOpenMenu(false);
@@ -59,7 +59,7 @@ const NavLinks = ({ setOpenMenu, openMenu }: componentProps) => {
           <p className="link">Projects</p>
         </div>
 
-        <div onClick={scrollToRandoms}>
+        <div onClick={scrollToResume}>
           <p className="link">Resume</p>
         </div>
 

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-
+import mail from "../images/mail.svg";
 import linkedin from "../images/linkedin.svg";
-import twitter from "../images/twitter.svg";
-import behance from "../images/behance.svg";
+import git from "../images/git.png";
+
 const Footer = () => {
   let socialLinks = useRef(null);
 
@@ -11,7 +11,7 @@ const Footer = () => {
       <h2 className="text-sm">Follow me:</h2>
       <div className="socials flex gap-2" ref={socialLinks}>
         <a
-          href="https://www.linkedin.com/in/adeoluwa-siyanbade-539b84170/"
+          href="https://www.linkedin.com/in/aiswaryamk020/"
           target="_blank"
           rel="noreferrer"
         >
@@ -19,20 +19,16 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://twitter.com/Commodore_Ade"
+          href="https://github.com/aiswaryakrishnakumar"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={twitter} className="twitter" alt="twitter" />
+          <img src={git} className="w-7 h-7 twitter" alt="GitHub" />
         </a>
 
-        <a
-          href="https://www.behance.net/adesiyanbss"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={behance} className="behance" alt="behance" />
-        </a>
+        <a href="mailto:aiswarya.mkrishnakumar@gmail.com" target="_blank">
+            <img src={mail} alt="mail" />
+          </a>
       </div>
     </div>
   );

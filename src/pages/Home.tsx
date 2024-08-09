@@ -1,28 +1,22 @@
 import { useState, useEffect, useRef } from "react";
-import Bstop from "../components/Projects/Bstop";
-import CodeCampus from "../components/Projects/CodeCampus";
-import Drooves from "../components/Projects/Drooves";
-import Easy from "../components/Projects/Easy";
-import GreenAfrica from "../components/Projects/GreenAfrica";
+
+
 import HeroSection from "../components/HeroSection";
 import Loading from "../components/Loading";
 
 import Projects from "../components/Projects";
-import Randoms from "../components/Randoms";
-import SnoozeOff from "../components/Projects/SnoozeOff";
+import Resume from "../components/Randoms";
+import NikeAir from "../components/Resume/NikeAir";
 import useLocoScroll from "../hooks/useLocoScroll";
-import NikeAir from "../components/Randoms/NikeAir";
-import FeetWings from "../components/Randoms/FeetWings";
-import Portfoilio from "../components/Randoms/Portfoilio";
+import Resume1 from "../components/Resume/Resume1";
+
 import Contact from "../components/Contact";
 import MobileNav from "../components/MobileNav";
-import Rebank from "../components/Projects/Rebank";
+
 import NavLinks from "../components/NavLinks";
 import Finance from "../components/Projects/Finance";
-import Agbado from "../components/Projects/Agbado";
-import Gnoto from "../components/Projects/Gnoto";
-import Alat from "../components/Projects/Alat";
-import NFT from "../components/Randoms/NFT";
+
+
 import avenirBold from "../assets/fonts/Avenir-Black.otf";
 import avenirBlack from "../assets/fonts/Avenir-Heavy.otf";
 import avenirLight from "../assets/fonts/Avenir-Light.otf";
@@ -104,15 +98,9 @@ const Home = () => {
                   />
                   <Projects openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Easy openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Agbado openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Drooves openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Gnoto openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                
+                  <Resume openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu} />
-                  <NFT openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Contact openMenu={openMenu} setOpenMenu={setOpenMenu} />
                 </div>
               </div>

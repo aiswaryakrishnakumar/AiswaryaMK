@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./Navbar";
 import linkedin from "../images/linkedin.svg";
-import twitter from "../images/twitter.svg";
+import git from "../images/git.png";
 import behance from "../images/behance.svg";
 import mail from "../images/mail.svg";
 import { gsap } from "gsap";
@@ -60,31 +60,21 @@ const Contact = ({ openMenu, setOpenMenu }: componentProps) => {
           </a>
 
           <a
-            href="https://twitter.com/Commodore_Ade"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={twitter} className="twitter" alt="twitter" />
-          </a>
-
-          <a
             href="https://github.com/aiswaryakrishnakumar"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={behance} className="behance" alt="behance" />
+            <img src={git} className="w-7 h-7 twitter" alt="Github" />
           </a>
 
-          <a href="mailto:minneade@gmail.com" target="_blank">
+          
+
+          <a href="mailto:aiswarya.mkrishnakumar@gmail.com" target="_blank">
             <img src={mail} alt="mail" />
           </a>
         </div>
 
-        {/* <div className="box w-2/12 h-[4rem] bg-[blue]" ref={box}></div> */}
-
-        {/* <div className="box2 w-2/12 h-[4rem] bg-[green]">
-
-           </div> */}
+     
       </div>
     </div>
   );
